@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+body {
+    background-image: url('/3D-Animated-Website-Backgrounds.webp');
+    height: 100vh; /* Adjusted height to viewport height */
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover; /* Ensures background image covers the entire viewport */
+}
+
+main {
+    background-image: url(/digital-strategies.jpg);
+    background-size: cover; /* Ensures background image covers the entire container */
+    background-position: center; /* Centers the background image */
+    padding: 50px; /* Added padding for better spacing */
+}
+
+.sidebar {
+    background-color: rgb(0, 255, 255);
+    width: 270px;
+    font-family: 'Salsa', cursive;
+    height: 100%; /* Adjusted height to 100% of the viewport height */
+    position: fixed; /* Fixed position to keep it visible */
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in; /* Added 's' to specify seconds */
+    overflow-y: auto; /* Added overflow-y to allow scrolling if content exceeds height */
+}
+
+.sidebar nav {
+    padding: 20px; /* Reduced padding for better spacing */
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 24px; /* Adjusted font size */
+    padding: 15px; /* Adjusted padding */
+}
+
+.main {
+    margin-left: 270px; /* Adjusted margin to accommodate sidebar */
+    padding: 20px; /* Added padding for better spacing */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Changed flex direction to column for better responsiveness */
+    align-items: center; /* Center-align items horizontally */
+}
+
+.infoContainer {
+    height: auto; /* Adjusted height to auto */
+    width: 100%; /* Adjusted width to 100% */
+    margin: 50px auto; /* Adjusted margin for better spacing */
+    display: flex;
+    flex-direction: column; /* Changed flex direction to column for better responsiveness */
+    align-items: center; /* Center-align items horizontally */
+}
+
+.devInfo {
+    color: deeppink; /* Corrected color value */
+    text-align: center; /* Center-align text */
+}
+
+.devInfo button {
+    text-transform: none;
+    margin-top: 20px; /* Added margin for better spacing */
+}
+
+.Hello {
+    font-size: 4vw; /* Adjusted font size */
+    line-height: 1.2; /* Adjusted line height */
+}
+
+.name {
+    font-size: 3.5vw; /* Adjusted font size */
+    color: rgb(251, 0, 255);
+    font-weight: bold; /* Added font weight */
+}
+
+.about {
+    font-size: 2.5vw; /* Adjusted font size */
+    color: rgb(255, 0, 255);
+}
+
+.moreabout {
+    font-size: 1.5vw; /* Adjusted font size */
+}
+
+.buttons {
+    margin-top: 20px; /* Added margin for better spacing */
+    font-size: 2vw; /* Adjusted font size */
+    padding: 10px 20px; /* Adjusted padding for better spacing */
+    border-radius: 20px; /* Adjusted border radius */
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    color: white;
+    background-color: greenyellow;
+}
+
+.Contactform {
+    color: white;
+    padding: 50px; /* Added padding for better spacing */
+    font-family: 'Salsa', cursive;
+}
+
+.Contactform h1 {
+    text-align: center; /* Center-align text */
+    margin-bottom: 20px; /* Added margin for better spacing */
+}
+
+.Contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align items horizontally */
+}
+
+.Contactform form div input,
+.btn {
+    width: 100%; /* Adjusted width to 100% */
+    margin-top: 10px; /* Added margin for better spacing */
+}
+
+#emailHelp {
+    font-size: 0.8em; /* Adjusted font size */
+    color: midnightblue;
+}
+
+.hamburger {
+    color: rgb(166, 0, 249);
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.cross {
+    color: rgb(166, 0, 249);
+    margin-left: 155px;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Adjusted width to 100% */
+        height: auto; /* Adjusted height to auto */
+        position: static; /* Changed position to static */
+        transition: none; /* Removed transition */
+    }
+
+    .main {
+        margin-left: 0; /* Adjusted margin to 0 */
+    }
+
+    .container,
+    .infoContainer {
+        margin: 20px auto; /* Adjusted margin for better spacing */
+    }
+
+    .devInfo button {
+        margin-top: 10px; /* Added margin for better spacing */
+    }
+
+    .Hello,
+    .name,
+    .about,
+    .moreabout,
+    .buttons,
+    .Contactform {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+}
